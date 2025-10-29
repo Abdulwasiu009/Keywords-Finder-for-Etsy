@@ -16,11 +16,16 @@
 
   <div class="container">
     <h1><span class="highlight">Etsy</span> Keyword Finder</h1>
-    <p class="subtitle">Discover profitable & trending Etsy keywords for your products</p>
+    <p class="subtitle">Find profitable & trending Etsy keywords for your listings</p>
 
     <div class="search-box">
       <input type="text" id="keywordInput" placeholder="Type a product keyword (e.g. handmade mug)" />
       <button onclick="findKeywords()">Find Keywords</button>
+    </div>
+
+    <div id="loading" class="loading" style="display:none;">
+      <div class="spinner"></div>
+      <p>Analyzing Etsy data…</p>
     </div>
 
     <div id="results" class="results"></div>
